@@ -1,0 +1,150 @@
+.banner {
+  > img {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+  }
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 10px;
+
+  .headerPost {
+
+    h1 {
+      font-size: 42px;
+      line-height: 58px;
+      font-weight: 700;
+      color: var(--heading);
+    }
+
+    .infoPostContainer {
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+
+      .infoContent {
+        display: flex;
+        align-items: center;
+        color: var(--info);
+
+        & + .infoContent {
+          margin-left: 28px;
+        }
+
+        > svg {
+          margin-right: 10px;
+        }
+
+        > span {
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .editPostContent {
+      margin-top: 18px;
+      font-size: 14px;
+      line-height: 17px;
+      color: var(--info);
+      font-style: italic;
+    }
+  }
+
+  .post {
+    margin-top: 66px;
+
+    .postSection {
+      & + .postSection {
+        margin-top: 50px;
+      }
+    }
+
+    h2 {
+      font-size: 28px;
+      line-height: 32px;
+      color: var(--heading);
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      color: var(--body);
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin-bottom: 30px;
+      margin-left: 40px;
+
+      li {
+        font-size: 18px;
+        color: var(--body);
+
+        & + li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.paginationContainer {
+  margin-top: 60px;
+  padding-top: 48px;
+  border-top: 1px solid rgba(215, 215, 215, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .paginationContent {
+    > p {
+      display: block;
+      color: var(--heading);
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    a {
+      display: block;
+      margin-top: 8px;
+      color: var(--highlight);
+      font-size: 16px;
+      line-height: 20px;
+      transition: opacity 0.2s;
+      font-weight: 600;
+
+      &:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+      }
+    }
+
+    &.nextPost {
+      margin-left: auto;
+    }
+
+    &.prevPost {
+      margin-right: auto;
+    }
+  }
+}
+
+.buttonModePreview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  width: 100%;
+  height: 58px;
+  background: var(--heading);
+  margin: 88px 0px 106px;
+  color: var(--background);
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+}
